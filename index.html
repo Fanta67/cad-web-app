@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CAD Web App</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside id="panel">
+        <h1>CAD Web App</h1>
+        <section>
+          <h2>Operations</h2>
+          <div id="operations" data-testid="operations"></div>
+          <div id="op-form" data-testid="op-form"></div>
+        </section>
+        <section>
+          <h2>Parts</h2>
+          <ul id="parts" data-testid="parts"></ul>
+          <button id="export-stl" data-testid="export-stl" type="button">
+            Export STL
+          </button>
+        </section>
+      </aside>
+      <main>
+        <canvas id="viewport" data-testid="viewport"></canvas>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
